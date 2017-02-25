@@ -1,0 +1,7 @@
+<h2>gitFinder</h2>
+<p>Find some stuff</P>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search", :name => nil) %>
+<% end %>
